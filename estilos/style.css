@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background: url(../imagens/img-nova.png) center center no-repeat fixed;
+    background-size: cover;
+}
+
+menu#box_menu {
+    position: absolute;
+    /* left: 40%; tamanho normal */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    transition: 0.5s;
+} 
+
+div#box_pai_menu {
+    /* width: 280px; tamanho normal*/
+    width: 69px;
+    height: 40px;
+    position: fixed;
+    background-color: rgba(101, 87, 228, 0.699);
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    /* left: 12%; tamanho normal*/
+    left: 40%;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+div#box_pai_menu.expandir {
+    width: 290px;
+    left: 12%;
+}
+
+header {
+    padding: 20px 0px;
+}
+
+span {
+    cursor: pointer;
+}
+
+div#caixa_opcoes {
+    width: fit-content;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.caixa_hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.caixa_recolhe {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+}
+
+span#menu {
+    transition: transform 0.3s ease-in-out;
+}
+
+.trocar_icon {
+    transform: rotate(360deg);
+}
+
+.mover {
+    transform: translateX(3%);
+}
+
+.elemento_mostrar {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s ease-in-out;
+}
+
+span.opcoes {
+    padding: 0px 10px;
+}
+
+span.icon {
+    padding: 5px;
+}
+
+div#icones {
+    display: flex;
+}
+
+.esconder {
+    display: none;
+}
+
+section {
+    padding-top: 20px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+main {
+    padding: 20px;
+}

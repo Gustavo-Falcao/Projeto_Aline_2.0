@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
 </head>
 <body>
-    
+    <header>
+        <div id="box_pai_menu">
+            <menu id="box_menu">
+                <div id="icones">
+                    <span class="material-symbols-outlined icon">home</span>
+                    <span id="menu" class="material-symbols-outlined icon" onclick="mostrar();">menu</span>
+                </div>
+                <div id="caixa_opcoes" class="caixa_hidden">
+                    <span class="opcoes">Produtos</span>
+                    <span class="opcoes">Sobre</span>
+                    <span class="opcoes">Contato</span>
+                </div>
+            </menu>
+        </div>
+    </header>
+
+    <!-- <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque beatae ab perspiciatis maxime omnis explicabo, exercitationem inventore doloremque! Earum reprehenderit recusandae commodi itaque, sunt ex nemo eum ipsa velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam totam amet magnam ut modi tempora quam velit voluptatem fuga est beatae, maiores neque eius accusantium aliquid quaerat. Qui, quibusdam assumenda!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloremque facere adipisci fugiat, numquam at voluptate, hic veniam dolores quis eveniet nisi mollitia inventore earum quisquam ab? Qui, tempore quidem?</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minus dignissimos unde. Voluptatibus fuga quam labore a fugit similique. Reiciendis facere veniam voluptate enim suscipit exercitationem repellendus, nostrum fugiat officia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque recusandae tempore, perspiciatis voluptatem deserunt enim natus necessitatibus tempora totam quod fugiat inventore aut quis sapiente libero exercitationem modi facilis quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis officiis rerum excepturi! Nisi accusamus neque totam laudantium dolore veritatis minima non vero, necessitatibus ab in ipsum quaerat unde voluptatibus doloribus.</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quae voluptate quibusdam debitis delectus aspernatur, dolor exercitationem repellendus tempore repellat tempora amet laborum iusto excepturi. Fugiat earum omnis dolorum architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum aut beatae quidem? Non consectetur nostrum molestiae sint veniam consequatur modi ducimus voluptatum quaerat numquam? Quisquam ex quae natus nobis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum sequi eum quidem distinctio illum repudiandae excepturi vel consequuntur minima deserunt alias, odit harum placeat illo eveniet laborum, saepe quibusdam cupiditate.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum asperiores facere? Deleniti pariatur sapiente ratione veniam a asperiores necessitatibus, sed deserunt suscipit explicabo soluta id sequi molestiae tenetur aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus modi repudiandae quia sint assumenda voluptates necessitatibus aliquam nobis eveniet itaque? Possimus, est! Unde obcaecati, maiores voluptate error tempore repellendus. Eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eveniet, natus aut odit quos fugiat tenetur assumenda, voluptatum sequi fuga nemo soluta! Omnis, error nesciunt sapiente totam quod animi quis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum provident a deserunt, et quidem in, omnis enim pariatur perferendis quaerat porro necessitatibus aliquam neque quos delectus sapiente ratione nam veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatum velit autem suscipit delectus. Consectetur iusto officia atque cumque perferendis excepturi accusamus veniam. Minus voluptas vero quis blanditiis sequi aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi laudantium facere culpa nesciunt a nam non similique maiores. Unde officiis veritatis rem fuga aliquid sint ut qui repellat minima totam!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus architecto reiciendis numquam quas magnam dicta eius corrupti beatae molestiae sunt alias fugiat vel, eveniet eum blanditiis. Reiciendis alias nesciunt quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure fugit, itaque nisi deserunt commodi ipsum earum perferendis nesciunt exercitationem odio, obcaecati ipsa culpa unde tempore voluptates? Amet, aliquam dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quam sed hic impedit suscipit dolorem voluptates odio omnis assumenda, aperiam, eaque nemo! Quidem dolores impedit deleniti reiciendis quas est sint.
+            </p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, modi beatae, ipsa porro ea perspiciatis debitis architecto accusamus sapiente aliquid similique nobis vel, ab deserunt exercitationem! Reprehenderit perspiciatis accusantium adipisci.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, tenetur quibusdam! Quo neque assumenda sit velit recusandae, atque expedita. Nam odio natus distinctio error, nobis maiores ipsam sequi. Enim, omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsam recusandae! Exercitationem vero cumque soluta eligendi necessitatibus ex! Soluta incidunt nemo facere minus inventore harum eveniet necessitatibus dolorum sit labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate inventore quae quod alias, similique ut quo necessitatibus magni iste iure, laudantium asperiores hic repellat itaque? Culpa illum totam quisquam sapiente!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut minus tenetur ducimus. Iusto laudantium vero omnis, cumque optio corporis repellat labore temporibus, in ut eius sit earum nesciunt, eveniet qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aperiam illum inventore quidem esse, rerum iste corrupti nam iusto beatae dicta porro recusandae provident doloremque sunt mollitia eos sit molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore et nemo quaerat exercitationem, id debitis saepe, culpa eligendi repudiandae odio reiciendis quis modi alias facere impedit placeat provident, harum nesciunt.</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, totam animi. Atque suscipit tenetur possimus, voluptate, quasi corporis maiores vitae, totam ullam consectetur necessitatibus? Eaque inventore optio neque culpa hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eius harum unde, ea laborum dicta atque eum velit natus. Sit fuga corrupti obcaecati ipsam sapiente quasi libero commodi consequatur nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum commodi dolor facilis placeat accusantium voluptas beatae esse architecto cum maxime soluta et explicabo quia, minus deleniti doloremque nihil repellendus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum libero temporibus ullam. Enim, fuga! Quos, pariatur. Cumque magni temporibus ipsa, hic voluptates fugit laborum asperiores neque voluptate dolor eum officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus nam quaerat quidem quas possimus ducimus delectus nesciunt repellendus quis fugit numquam consequuntur voluptate eum facilis beatae aliquam, eveniet molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eos magnam, perferendis cupiditate temporibus neque a, error sint ea tenetur quo vitae veniam enim fuga ut, porro atque natus debitis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nostrum eveniet cum similique dolore quis culpa tenetur, rerum cupiditate eligendi! Consectetur ut labore quibusdam molestias necessitatibus quas reprehenderit sed consequatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed reprehenderit est error. Ab sunt nulla, ea distinctio quibusdam repellat dolorem fugiat suscipit ad nihil cupiditate neque, amet eveniet illo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quisquam perspiciatis quos praesentium eius assumenda maxime labore tenetur. Adipisci earum fugiat, eius asperiores quo enim ad? Quam dolor asperiores doloremque!</p>
+        </section>
+    </main> -->
+
+    <script>
+
+        function mostrar() {
+            
+            let caixa_pai = document.querySelector('#box_pai_menu')
+            let menu_clic = document.querySelector('#menu');
+            let caixa = document.querySelector('#caixa_opcoes');
+            let caixa_menu = document.querySelector('#box_menu');
+
+            if(!caixa_pai.classList.contains("expandir")) {
+                caixa_menu.classList.toggle('mover')
+                caixa.classList.toggle("elemento_mostrar")
+                menu_clic.classList.toggle("trocar_icon")
+                caixa_pai.classList.toggle("expandir")
+
+            } else {
+                caixa_menu.classList.remove('mover')
+                caixa.classList.replace("elemento_mostrar", "caixa_recolhe")
+                menu_clic.classList.remove("trocar_icon")
+                caixa_pai.classList.remove("expandir")
+            }
+
+            if(menu_clic.innerText === "menu") {
+                    menu_clic.innerText = "close"
+                } else {
+                    menu_clic.innerText = "menu"
+                }
+
+            /* caixa_menu.classList.toggle('mover');
+            caixa.classList.toggle("elemento_mostrar")
+
+            if(menu_clic.innerText === "menu") {
+                menu_clic.innerText = "close"
+            } else {
+                menu_clic.innerText = "menu"
+            }
+
+            menu_clic.classList.toggle("trocar_icon")
+
+            if(!caixa_pai.classList.contains("expandir")) {
+                caixa_pai.classList.toggle("expandir")
+            } */
+        }
+        
+        
+            
+    </script>
+
 </body>
 </html>
