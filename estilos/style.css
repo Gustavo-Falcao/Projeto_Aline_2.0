@@ -13,6 +13,31 @@ body {
     background-size: cover;
 }
 
+header {
+    padding: 20px 0px;
+}
+
+div#box_pai_menu {
+    /* width: 280px; tamanho normal*/
+    width: 85px;
+    height: 40px;
+    position: fixed;
+    background-color: rgba(101, 87, 228, 0.699);
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    /* left: 12%; tamanho normal*/
+    left: 40%;
+    border-radius: 30px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+div#box_pai_menu.expandir {
+    width: 300px;
+    left: 8%;
+    padding: 10px;
+}
+
 menu#box_menu {
     position: absolute;
     /* left: 40%; tamanho normal */
@@ -25,27 +50,25 @@ menu#box_menu {
     transition: 0.5s;
 } 
 
-div#box_pai_menu {
-    /* width: 280px; tamanho normal*/
-    width: 69px;
-    height: 40px;
-    position: fixed;
-    background-color: rgba(101, 87, 228, 0.699);
-    z-index: 1;
-    backdrop-filter: blur(3px);
-    /* left: 12%; tamanho normal*/
-    left: 40%;
-    border-radius: 30px;
-    transition: 0.5s;
+menu#box_menu.mover {
+    transform: translateX(-2%);
 }
 
-div#box_pai_menu.expandir {
-    width: 290px;
-    left: 12%;
+div#icones {
+    display: flex;
 }
 
-header {
-    padding: 20px 0px;
+span.icon {
+    padding: 5px;
+    font-size: 30px;
+}
+
+span#menu {
+    transition: transform 0.3s ease-in-out;
+}
+
+span#menu.trocar_icon {
+    transform: rotate(360deg);
 }
 
 span {
@@ -58,11 +81,19 @@ div#caixa_opcoes {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-.caixa_hidden {
+div#caixa_opcoes.caixa_hidden {
     opacity: 0;
     visibility: hidden;
+}
+
+div#caixa_opcoes.elemento_mostrar {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s ease-in-out;
 }
 
 .caixa_recolhe {
@@ -71,38 +102,13 @@ div#caixa_opcoes {
     transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
 }
 
-span#menu {
-    transition: transform 0.3s ease-in-out;
-}
-
-.trocar_icon {
-    transform: rotate(360deg);
-}
-
-.mover {
-    transform: translateX(3%);
-}
-
-.elemento_mostrar {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 1.2s ease-in-out, visibility 1.2s ease-in-out;
-}
-
 span.opcoes {
     padding: 0px 10px;
+    color: white;
 }
 
-span.icon {
-    padding: 5px;
-}
-
-div#icones {
-    display: flex;
-}
-
-.esconder {
-    display: none;
+main {
+    padding: 20px;
 }
 
 section {
@@ -111,8 +117,4 @@ section {
 
 p {
     padding-top: 20px;
-}
-
-main {
-    padding: 20px;
 }
